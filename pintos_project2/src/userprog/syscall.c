@@ -376,7 +376,7 @@ find_file_id (int file_id)
 static void
 syscall_handler (struct intr_frame *f UNUSED)
 {
-  printf("System Call!", *(uint32_t *)f->esp);
+  // printf("System Call!", *(uint32_t *)f->esp);
   /* For Task2 practice, just add 1 to its first argument, and print its result */
   int * p = f->esp;
   check_ptr2 (p + 1);
